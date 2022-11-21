@@ -31,12 +31,12 @@ public class Script_cylinder : MonoBehaviour
         boubouboubouboub = Random.Range(1, 101);
         if (0 < boubouboubouboub && boubouboubouboub < (line.GetComponent<Script_trace>().nscore > 90 ? 90: line.GetComponent<Script_trace>().nscore))
         {
-            transform.DOMoveX(transform.position.x + Random.Range(-3,3), 3).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+            transform.DOMoveX(transform.position.x + Random.Range(-3,3), Random.Range(2f , 4.5f)).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
         }
         boubouboubouboub = Random.Range(1, 101);
         if (0 < boubouboubouboub && boubouboubouboub < (line.GetComponent<Script_trace>().nscore > 90 ? 90 : line.GetComponent<Script_trace>().nscore))
         {
-            transform.DOMoveY(transform.position.y + Random.Range(-3, 3), 3).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+            transform.DOMoveY(transform.position.y + Random.Range(-3, 3), Random.Range(2f , 4.5f)).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
         }
     }
 }

@@ -9,6 +9,10 @@ public class Script_trace : MonoBehaviour
     [SerializeField] GameObject line;
     [SerializeField] GameObject ball;
 
+    [SerializeField] GameObject menu;
+    [SerializeField] GameObject pause;
+    [SerializeField] GameObject joys;
+
     [SerializeField] Text balles;
     public int nballes = 5;
     [SerializeField] Text score;
@@ -27,7 +31,7 @@ public class Script_trace : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        menu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -66,6 +70,12 @@ public class Script_trace : MonoBehaviour
                 }
             }
             line.SetActive(false);
+        }
+        if(nballes == 0)
+        {
+            menu.SetActive(true);
+            joys.SetActive(false);
+            pause.SetActive(false);
         }
     }
 }
