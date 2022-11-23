@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -71,11 +72,14 @@ public class Script_trace : MonoBehaviour
             }
             line.SetActive(false);
         }
-        if(nballes == 0)
+    }
+    public void Loose()
+    {
+        if (nballes == 0)
         {
             menu.SetActive(true);
             joys.SetActive(false);
             pause.SetActive(false);
-        }
+        } 
     }
 }

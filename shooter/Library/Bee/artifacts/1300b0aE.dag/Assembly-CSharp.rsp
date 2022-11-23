@@ -367,6 +367,7 @@
 "Assets/Script_ball.cs"
 "Assets/Script_cible.cs"
 "Assets/Script_cylinder.cs"
+"Assets/Script_hs.cs"
 "Assets/Script_Pause.cs"
 "Assets/Script_Play.cs"
 "Assets/Script_Restart.cs"
