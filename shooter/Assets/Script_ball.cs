@@ -9,6 +9,7 @@ using UnityEngine.VFX;
 
 public class Script_ball : MonoBehaviour
 {
+    [SerializeField] ParticleSystem particules;
     GameObject trace;
 
     private void Start()
@@ -29,6 +30,8 @@ public class Script_ball : MonoBehaviour
     }
     void OnDestroy()
     {
+        ParticleSystem effet = Instantiate(particules);
+        effet.transform.position = transform.position;
         trace.GetComponent<Script_trace>().Loose();
     }
 }
